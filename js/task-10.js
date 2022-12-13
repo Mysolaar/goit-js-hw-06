@@ -12,13 +12,13 @@ let boxSize = 30;
 
 createBoxes.addEventListener("click", () =>{
  for (let i = 0; i < amount.value; i++) {
-const newBox = document.createElement("div");
-
-newBox.style.width = `${boxSize}px`;
-newBox.style.height = `${boxSize}px`;
-newBox.style.backgroundColor = `${getRandomHexColor()}`;
-   boxSize += 10;
-   divBoxes.appendChild(newBox);
+    const newBox = document.createElement("div");
+    newBox.className = "border";
+    newBox.style.width = `${boxSize}px`;
+    newBox.style.height = `${boxSize}px`;
+    newBox.style.backgroundColor = `${getRandomHexColor()}`;
+    boxSize += 10;
+    divBoxes.appendChild(newBox);
  }
 });
 
